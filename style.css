@@ -1,0 +1,172 @@
+/* ================== ستايل عام ================== */
+body {
+    font-family: 'Scheherazade New', 'Amiri', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f4ef; /* خلفية هادية */
+    color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* الوضع الليلي */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+}
+
+/* ================== الهيدر ================== */
+header {
+    background-color: #8b5e3c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+header button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #4b2e1e;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #6b3e2f;
+}
+
+/* ================== القوائم ================== */
+nav {
+    background-color: #e0cda9;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4b3e2a;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #d2b48c;
+}
+
+/* الوضع الليلي للقائمة */
+body.dark-mode nav {
+    background-color: #2c2c2c;
+}
+
+body.dark-mode nav a {
+    color: #f1f1f1;
+}
+
+body.dark-mode nav a:hover {
+    background-color: #444;
+}
+
+/* ================== قسم السور ================== */
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* عنوان القسم */
+section h2 {
+    text-align: center;
+    color: #8b5e3c;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* قائمة اختيار السورة */
+#surahSelect {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* ================== عرض الآيات ================== */
+#ayahText {
+    background-color: #fff8e7; /* خلفية خفيفة للآيات */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    line-height: 2;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #4b3e2a;
+    text-align: right; /* محاذاة لليمين للقرآن */
+    transition: all 0.3s;
+    word-spacing: 2px;
+}
+
+/* الوضع الليلي للآيات */
+body.dark-mode #ayahText {
+    background-color: #2c2c2c;
+    color: #f1f1f1;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+/* ================== الأزرار ================== */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #8b5e3c;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a9734f;
+}
+
+/* ================== الفوتر ================== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e0cda9;
+    color: #4b3e2a;
+    font-weight: 600;
+}
+
+/* الوضع الليلي للفوتر */
+body.dark-mode footer {
+    background-color: #2c2c2c;
+    color: #f1f1f1;
+}
+
+/* ================== تصميم متجاوب ================== */
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+    }
+    #ayahText {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
